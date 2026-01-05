@@ -2,29 +2,6 @@
 <html lang="en">
     <head>
         <script src="https://cdn.c360a.salesforce.com/beacon/c360a/eec2ec39-eabe-4654-bfed-749e2f9053f9/scripts/c360a.min.js"></script>
-        <script type="text/javascript">
-            function initEmbeddedMessaging() {
-                try {
-                    embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-                    embeddedservice_bootstrap.init(
-                        '00DKZ00000WU4Jc',
-                        'Messaging_for_Agentforce_Service_Agent',
-                        'https://trailsignup-145183137f0ca1.my.site.com/ESWMessagingforAgentfor1765963115461',
-                        {
-                            scrt2URL: 'https://trailsignup-145183137f0ca1.my.salesforce-scrt.com',
-                        },
-                    );
-                } catch (err) {
-                    console.error('Error loading Embedded Messaging: ', err);
-                }
-            }
-        </script>
-        <script
-            type="text/javascript"
-            src="https://trailsignup-145183137f0ca1.my.site.com/ESWMessagingforAgentfor1765963115461/assets/js/bootstrap.min.js"
-            onload="initEmbeddedMessaging()"
-        ></script>
 
         <script>
             //Initialize the SDK
@@ -83,5 +60,30 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    --></body>
+      
+    -->
+        <script type="text/javascript">
+            function initEmbeddedMessaging() {
+                try {
+                    embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+                    embeddedservice_bootstrap.init(
+                        '00DKZ00000WU4Jc',
+                        'Messaging_for_Agentforce_Service_Agent',
+                        'https://trailsignup-145183137f0ca1.my.site.com/ESWMessagingforAgentfor1765963115461',
+                        {
+                            scrt2URL: 'https://trailsignup-145183137f0ca1.my.salesforce-scrt.com',
+                        },
+                    );
+                } catch (err) {
+                    console.error('Error loading Embedded Messaging: ', err);
+                }
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="https://trailsignup-145183137f0ca1.my.site.com/ESWMessagingforAgentfor1765963115461/assets/js/bootstrap.min.js"
+            onload="initEmbeddedMessaging()"
+        ></script>
+    </body>
 </html>
