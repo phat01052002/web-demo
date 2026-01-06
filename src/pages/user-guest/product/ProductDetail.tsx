@@ -182,7 +182,7 @@ const ProductDetail: React.FC = () => {
         <>
             <Container sx={{ marginTop: { xs: '210px', md: '160px' }, marginRight: { xs: '70px', md: '10px' } }}>
                 {showCoupon && (
-                    <div className="fixed bottom-5 right-5 bg-red-600 text-white p-6 rounded-lg shadow-2xl animate-bounce-in z-50">
+                    <div className="fixed bottom-5 right-24 bg-red-600 text-white p-6 rounded-lg shadow-2xl animate-bounce-in z-50">
                         <h3 className="text-xl font-bold">🎁 Ưu đãi đặc biệt!</h3>
                         <p>
                             Bạn đang phân vân? Giảm ngay <strong>10%</strong> nếu mua ngay.
