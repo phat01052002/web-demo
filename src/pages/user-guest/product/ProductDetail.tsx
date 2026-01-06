@@ -205,7 +205,7 @@ const ProductDetail: React.FC = () => {
                     </div>
                 )}
                 {showProduct && productRelate && (
-                    <div className="fixed bottom-5 right-5 bg-red-600 text-white p-6 rounded-lg shadow-2xl animate-bounce-in z-50">
+                    <div className="fixed bottom-5 right-24 bg-red-600 text-white p-6 rounded-lg shadow-2xl animate-bounce-in z-50">
                         <h3 className="text-xl font-bold">🎁 Ưu đãi đặc biệt!</h3>
 
                         <div className="my-3 text-2xl font-mono bg-white text-red-600 px-3 py-1 rounded text-center">
