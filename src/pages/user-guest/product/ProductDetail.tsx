@@ -180,7 +180,7 @@ const ProductDetail: React.FC = () => {
     });
     return (
         <>
-            <Container sx={{ marginTop: { xs: '210px', md: '160px' } }}>
+            <Container sx={{ marginTop: { xs: '210px', md: '160px' }, marginLeft: { xs: '50px', md: '10px' } }}>
                 {showCoupon && (
                     <div className="fixed bottom-5 right-5 bg-red-600 text-white p-6 rounded-lg shadow-2xl animate-bounce-in z-50">
                         <h3 className="text-xl font-bold">🎁 Ưu đãi đặc biệt!</h3>
@@ -216,7 +216,7 @@ const ProductDetail: React.FC = () => {
                             onClick={() => (window.location.href = `/product/${productRelate[0].productid__c}`)}
                             className="mt-3 w-full bg-yellow-400 text-black font-bold py-2 rounded hover:bg-yellow-300 transition"
                         >
-                            Xem Thêm Sản Phẩm
+                            Sản Phẩm Có Thể Bạn Quan Tâm
                         </button>
                     </div>
                 )}
